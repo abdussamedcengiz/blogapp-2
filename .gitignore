@@ -1,0 +1,4 @@
+node_modules/
+
+# Ortam degiskenleri: veritabani bilgileri burada, depoya girmemeli
+.env
