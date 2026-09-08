@@ -11,6 +11,7 @@ app.use(admintoutes);
 app.use(userroutes);
 // routes içeri aktarılıyor
 
-app.listen(3000, function () {
-  console.log("listening on port 4000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
+  console.log(`http://localhost:${PORT} adresinde calisiyor`);
 });
