@@ -6,7 +6,6 @@ const path = require("path");
 const userroutes = require("./routes/user");
 const admintoutes = require("./routes/admin");
 
-app.use("/libs", express.static(path.join(__dirname, "./node_modules")));
 app.use("/static", express.static(path.join(__dirname, "./public")));
 app.use(admintoutes);
 app.use(userroutes);
